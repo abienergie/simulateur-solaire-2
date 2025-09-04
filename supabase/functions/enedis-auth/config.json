@@ -1,0 +1,16 @@
+{
+  "name": "enedis-auth",
+  "version": "1.0.0",
+  "description": "Enedis OAuth callback handler",
+  "runtime": "deno",
+  "entrypoint": "index.ts",
+  "methods": ["GET", "POST", "OPTIONS"],
+  "verify_jwt": false,
+  "env": {
+    "ENEDIS_CLIENT_ID": "Y_LuB7HsQW3JWYudw7HRmN28FN8a",
+    "ENEDIS_CLIENT_SECRET": "Pb9H1p8zJ4IfX0xca5c7lficGo4a",
+    "ENEDIS_REDIRECT_URI": "https://abienergie.github.io/simulateur-solaire/#/oauth/callback",
+    "SUPABASE_URL": "",
+    "SUPABASE_SERVICE_ROLE_KEY": ""
+  }
+}

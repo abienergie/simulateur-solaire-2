@@ -1,0 +1,106 @@
+// Données d'ensoleillement par département (kWh/m²/an)
+export const SUNSHINE_HOURS: { [key: string]: number } = {
+  "01": 1320, // Ain
+  "02": 1140, // Aisne
+  "03": 1290, // Allier
+  "04": 1540, // Alpes de Haute-Provence
+  "05": 1540, // Hautes-Alpes
+  "06": 1590, // Alpes-Maritimes
+  "07": 1450, // Ardèche
+  "08": 1070, // Ardennes
+  "09": 1350, // Ariège
+  "10": 1210, // Aube
+  "11": 1580, // Aude
+  "12": 1410, // Aveyron
+  "13": 1580, // Bouches-du-Rhône
+  "14": 1170, // Calvados
+  "15": 1290, // Cantal
+  "16": 1340, // Charente
+  "17": 1450, // Charente-Maritime
+  "18": 1250, // Cher
+  "19": 1320, // Corrèze
+  "21": 1240, // Côte-d'Or
+  "22": 1200, // Côtes d'Armor
+  "23": 1280, // Creuse
+  "24": 1360, // Dordogne
+  "25": 1240, // Doubs
+  "26": 1470, // Drôme
+  "27": 1220, // Eure
+  "28": 1220, // Eure-et-Loir
+  "29": 1200, // Finistère
+  "30": 1580, // Gard
+  "31": 1430, // Haute-Garonne
+  "32": 1400, // Gers
+  "33": 1400, // Gironde
+  "34": 1580, // Hérault
+  "35": 1220, // Ille-et-Vilaine
+  "36": 1280, // Indre
+  "37": 1280, // Indre-et-Loire
+  "38": 1390, // Isère
+  "39": 1270, // Jura
+  "40": 1380, // Landes
+  "41": 1250, // Loir-et-Cher
+  "42": 1380, // Loire
+  "43": 1330, // Haute-Loire
+  "44": 1290, // Loire-Atlantique
+  "45": 1220, // Loiret
+  "46": 1390, // Lot
+  "47": 1420, // Lot-et-Garonne
+  "48": 1380, // Lozère
+  "49": 1290, // Maine-et-Loire
+  "50": 1150, // Manche
+  "51": 1170, // Marne
+  "52": 1170, // Haute-Marne
+  "53": 1220, // Mayenne
+  "54": 1170, // Meurthe-et-Moselle
+  "55": 1170, // Meuse
+  "56": 1290, // Morbihan
+  "57": 1220, // Moselle
+  "58": 1270, // Nièvre
+  "59": 1050, // Nord
+  "60": 1180, // Oise
+  "61": 1180, // Orne
+  "62": 1120, // Pas-de-Calais
+  "63": 1300, // Puy-de-Dôme
+  "64": 1340, // Pyrénées-Atlantiques
+  "65": 1350, // Hautes-Pyrénées
+  "66": 1580, // Pyrénées-Orientales
+  "67": 1190, // Bas-Rhin
+  "68": 1190, // Haut-Rhin
+  "69": 1340, // Rhône
+  "70": 1190, // Haute-Saône
+  "71": 1290, // Saône-et-Loire
+  "72": 1220, // Sarthe
+  "73": 1380, // Savoie
+  "74": 1310, // Haute-Savoie
+  "75": 1140, // Paris
+  "76": 1140, // Seine-Maritime
+  "77": 1140, // Seine-et-Marne
+  "78": 1180, // Yvelines
+  "79": 1330, // Deux-Sèvres
+  "80": 1120, // Somme
+  "81": 1410, // Tarn
+  "82": 1420, // Tarn-et-Garonne
+  "83": 1560, // Var
+  "84": 1630, // Vaucluse
+  "85": 1340, // Vendée
+  "86": 1310, // Vienne
+  "87": 1320, // Haute-Vienne
+  "88": 1220, // Vosges
+  "89": 1210, // Yonne
+  "90": 1190, // Territoire de Belfort
+  "91": 1210, // Essonne
+  "92": 1180, // Hauts-de-Seine
+  "93": 1180, // Seine-Saint-Denis
+  "94": 1180, // Val-de-Marne
+  "95": 1180, // Val-d'Oise
+  "971": 2000, // Guadeloupe
+  "972": 2000, // Martinique
+  "973": 1800, // Guyane
+  "974": 2200, // Réunion
+  "976": 1800, // Mayotte
+  "2B": 1580  // Haute-Corse
+};
+
+// Valeur par défaut si département non trouvé
+export const DEFAULT_SUNSHINE = 1300; // Moyenne nationale

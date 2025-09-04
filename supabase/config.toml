@@ -1,0 +1,21 @@
+# This is the Supabase configuration file for production
+
+project_id = "xpxbxfuckljqdvkajlmx"
+
+[auth]
+# URL site et redirections
+site_url = "https://abienergie.github.io/simulateur-solaire"
+additional_redirect_urls = ["https://abienergie.github.io/simulateur-solaire/#/oauth/callback"]
+
+[auth.email]
+enable_signup = false
+double_confirm_changes = false
+enable_confirmations = false
+
+[functions]
+[functions.enedis-auth]
+verify_jwt = false
+[functions.enedis-data]
+verify_jwt = false
+[functions.enedis-token-refresh]
+verify_jwt = false

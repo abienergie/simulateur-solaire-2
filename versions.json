@@ -1,0 +1,30 @@
+{
+  "6.9.2": {
+    "date": "2025-01-12",
+    "description": "Amélioration majeure de la récupération de courbe de charge annuelle :",
+    "features": [
+      "Suppression de la limitation Supabase à 1000 points via pagination intelligente",
+      "Récupération par batches de 1000 points jusqu'à 8760 points maximum",
+      "Calcul précis de la période annuelle (365 jours exacts)",
+      "Logs détaillés du processus de récupération par tranches",
+      "Affichage du nombre réel de points reçus de l'API Enedis",
+      "Identification des semaines échouées pour retry ultérieur",
+      "Optimisation des délais entre requêtes (200ms au lieu de 300ms)",
+      "Gestion robuste des fréquences variables (30min/1h)",
+      "Amélioration de la couverture de données annuelles",
+      "Calcul dynamique du pourcentage de couverture réel"
+    ]
+  },
+  "6.9.1": {
+    "date": "2025-06-28",
+    "description": "Amélioration de la persistance des données de courbe de charge annuelle :",
+    "features": [
+      "Sauvegarde des courbes de charge annuelles dans le localStorage",
+      "Chargement automatique des données au démarrage",
+      "Amélioration de la gestion des erreurs API Enedis",
+      "Ajout d'un mécanisme de retry avec backoff exponentiel",
+      "Optimisation des performances et de la stabilité",
+      "Meilleure gestion des erreurs temporaires du serveur Enedis"
+    ]
+  }
+}

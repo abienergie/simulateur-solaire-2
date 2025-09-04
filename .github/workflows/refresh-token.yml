@@ -1,0 +1,32 @@
+name: Refresh Enedis API Token
+
+on:
+  schedule:
+    # Exécution toutes les 3 heures
+    - cron: '0 */3 * * *'
+  # Permet également l'exécution manuelle depuis l'interface GitHub
+  workflow_dispatch:
+
+jobs:
+  refresh-token:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Create package.json for ESM
+        run: |
+          echo '{"type":"module"}' > .github/scripts/package.json
+
+      - name: Request new Enedis API token
+        run: node .github/scripts/refresh-enedis-token.js
+        env:
+          SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
